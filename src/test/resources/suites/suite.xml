@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="local" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="com.ivan.automation.core.mobile.listener.TestListener"/>
+    </listeners>
+    <test verbose="1" name="TestRunner">
+        <classes>
+            <class name="com.ivan.automation.tests.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
