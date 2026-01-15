@@ -1,6 +1,18 @@
 package com.ivan.automation.core.mobile.api.services
 
 import com.ivan.automation.core.mobile.api.ServiceConstants.DASHBOARD_URI
+import com.ivan.automation.core.mobile.api.models.request.AddShowcaseChildrenRequest
+import com.ivan.automation.core.mobile.api.models.request.AddShowcaseCtaLabelRequest
+import com.ivan.automation.core.mobile.api.models.request.CreateCallToActionRequestV2
+import com.ivan.automation.core.mobile.api.models.request.CreateContentRequestV2
+import com.ivan.automation.core.mobile.api.models.request.CreateDeviceProfileRequest
+import com.ivan.automation.core.mobile.api.models.request.CreateShowcaseV2Request
+import com.ivan.automation.core.mobile.api.models.request.CreateTerritoryRequest
+import com.ivan.automation.core.mobile.api.models.request.UpdateContentLanguagesRequest
+import com.ivan.automation.core.mobile.api.models.request.UpdateContentRequestV2
+import com.ivan.automation.core.mobile.api.models.request.UpdateShowcaseCTARequest
+import com.ivan.automation.core.mobile.api.models.request.UpdateShowcaseLanguagesRequest
+import com.ivan.automation.core.mobile.api.models.request.UpdateShowcaseRequestV2
 import com.ivan.automation.core.mobile.api.models.response.AddShowcaseCtaLabelResponseResponse
 import com.ivan.automation.core.mobile.api.models.response.ContentResponse
 import com.ivan.automation.core.mobile.api.models.response.ContentResponseV2

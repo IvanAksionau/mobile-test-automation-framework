@@ -19,19 +19,4 @@ class HomeStepDefinitions {
     fun tapTheShowcaseInTheHomeScreenTopBanner() {
         homeTask.selectTheShowcaseInTheHomeScreenTopBanner()
     }
-
-    @When("user taps CTA button of the home screen banner showcase with {string} title")
-    fun tapBannerShowcaseCtaButtonByLabel(bannerTitle: String) {
-        homeTask.tapBannerShowcaseCtaButtonByLabel(bannerTitle)
-    }
-
-    @When("user scroll down sections list to find the specific content")
-    fun scrollDownSectionsListTillSpecificContentType() {
-        homeTask.scrollDownSectionsListTillSpecificContentType(ContentType.MOVIE.name)
-    }
-
-    @When("user navigate into specific found content")
-    fun tapOnTheShowCaseOfSpecificContentType() {
-        homeTask.tapOnTheShowCaseOfSpecificContentType()
-    }
 }

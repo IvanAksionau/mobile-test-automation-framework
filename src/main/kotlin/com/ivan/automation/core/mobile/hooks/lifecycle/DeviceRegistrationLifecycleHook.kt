@@ -1,5 +1,6 @@
 package com.ivan.automation.core.mobile.hooks.lifecycle
 
+import com.ivan.automation.core.mobile.api.models.request.RegisterDeviceRequest
 import com.ivan.automation.core.mobile.api.services.GandalfService
 import com.ivan.automation.core.mobile.api.services.GateKeeperService
 import com.ivan.automation.core.mobile.driver.AppiumProperties

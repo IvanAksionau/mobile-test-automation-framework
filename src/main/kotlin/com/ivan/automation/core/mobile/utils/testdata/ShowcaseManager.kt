@@ -1,5 +1,9 @@
 package com.ivan.automation.core.mobile.utils.testdata
 
+import com.ivan.automation.core.mobile.api.models.enums.ShowcaseDataTypeV2
+import com.ivan.automation.core.mobile.api.models.request.CreateShowcaseV2Request
+import com.ivan.automation.core.mobile.api.models.request.UpdateShowcaseLanguagesRequest
+import com.ivan.automation.core.mobile.api.models.request.UpdateShowcaseRequestV2
 import com.ivan.automation.core.mobile.api.models.response.ShowCaseResponseV2
 import com.ivan.automation.core.mobile.api.services.CmsService
 import com.ivan.automation.core.mobile.driver.AppiumProperties.PLATFORM_NAME

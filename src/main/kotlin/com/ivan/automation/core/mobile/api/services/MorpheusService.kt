@@ -1,6 +1,7 @@
 package com.ivan.automation.core.mobile.api.services
 
 import com.ivan.automation.core.mobile.api.ServiceConstants.BASE_URI
+import com.ivan.automation.core.mobile.api.models.request.GetContentDataRequest
 import com.ivan.automation.core.mobile.api.models.response.GetContentDataResponse
 import com.ivan.automation.core.mobile.api.wrapper.RequestWrapper
 import com.ivan.automation.core.mobile.utils.HttpRetryExecutor

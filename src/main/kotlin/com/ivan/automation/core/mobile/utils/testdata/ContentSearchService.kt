@@ -1,5 +1,6 @@
 package com.ivan.automation.core.mobile.utils.testdata
 
+import com.ivan.automation.core.mobile.api.models.enums.ContentType
 import com.ivan.automation.core.mobile.api.models.enums.PublishStatus
 import com.ivan.automation.core.mobile.api.models.response.ContentResponse
 import com.ivan.automation.core.mobile.api.services.CmsService

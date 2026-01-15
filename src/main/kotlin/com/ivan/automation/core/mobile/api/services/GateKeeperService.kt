@@ -1,6 +1,8 @@
 package com.ivan.automation.core.mobile.api.services
 
 import com.ivan.automation.core.mobile.api.ServiceConstants.BASE_URI
+import com.ivan.automation.core.mobile.api.models.request.GetAdminTokenRequest
+import com.ivan.automation.core.mobile.api.models.request.RegisterDeviceRequest
 import com.ivan.automation.core.mobile.api.models.response.GetAdminTokenResponse
 import com.ivan.automation.core.mobile.api.models.response.RegisterDeviceResponse
 import com.ivan.automation.core.mobile.api.wrapper.RequestWrapper

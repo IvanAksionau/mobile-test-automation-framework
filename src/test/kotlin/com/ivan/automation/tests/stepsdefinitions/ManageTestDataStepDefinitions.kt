@@ -1,5 +1,6 @@
 package com.ivan.automation.tests.stepsdefinitions
 
+import com.ivan.automation.core.mobile.api.models.enums.ContentType
 import com.ivan.automation.core.mobile.utils.TestContextConstants.CONTENT_RESPONSE
 import com.ivan.automation.core.mobile.utils.TestContextConstants.SHOWCASE_DATA
 import com.ivan.automation.core.mobile.utils.TestContextManager

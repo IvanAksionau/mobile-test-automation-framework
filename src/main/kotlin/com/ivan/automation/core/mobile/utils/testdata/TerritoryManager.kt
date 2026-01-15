@@ -1,5 +1,6 @@
 package com.ivan.automation.core.mobile.utils.testdata
 
+import com.ivan.automation.core.mobile.api.models.request.CreateTerritoryRequest
 import com.ivan.automation.core.mobile.api.models.response.DataResponse
 import com.ivan.automation.core.mobile.api.services.CmsService
 import com.ivan.automation.core.mobile.driver.AppiumProperties.PLATFORM_NAME

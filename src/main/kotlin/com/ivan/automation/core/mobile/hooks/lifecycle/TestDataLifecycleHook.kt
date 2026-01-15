@@ -1,5 +1,6 @@
 package com.ivan.automation.core.mobile.hooks.lifecycle
 
+import com.ivan.automation.core.mobile.api.models.request.GetAdminTokenRequest
 import com.ivan.automation.core.mobile.api.services.GandalfService
 import com.ivan.automation.core.mobile.api.services.GateKeeperService
 import com.ivan.automation.core.mobile.hooks.interfaces.ITestLifecycleHook

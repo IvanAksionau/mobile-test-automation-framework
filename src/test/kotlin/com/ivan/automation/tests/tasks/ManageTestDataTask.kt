@@ -1,5 +1,8 @@
 package com.ivan.automation.tests.tasks
 
+import com.ivan.automation.core.mobile.api.models.enums.ContentType
+import com.ivan.automation.core.mobile.api.models.request.GetAdminTokenRequest
+import com.ivan.automation.core.mobile.api.models.request.GetContentDataRequest
 import com.ivan.automation.core.mobile.api.models.response.ClientResolutionResponse
 import com.ivan.automation.core.mobile.api.models.response.ContentResponse
 import com.ivan.automation.core.mobile.api.models.response.ContentResponseV2
@@ -24,7 +27,7 @@ import org.testng.SkipException
 /**
  * Task class for managing test data operations.
  */
-class ManageTestDataTask : OnboardingScreen() {
+class ManageTestDataTask {
 
     private val bannerPreparator = BannerShowcasePreparator()
 
@@ -132,8 +135,8 @@ class ManageTestDataTask : OnboardingScreen() {
 
         val request = GetContentDataRequest(
             contentId = content.id,
-            contentType = contentType.name,
-            productId = content.productId
+            type = contentType.name,
+            productId = content.productId ?: ""
         )
 
         MorpheusService.waitUntilContentIsPlayable(request)

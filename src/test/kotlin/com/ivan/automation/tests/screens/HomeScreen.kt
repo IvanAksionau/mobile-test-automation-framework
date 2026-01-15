@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement
 open class HomeScreen : MobileBaseScreen() {
 
     protected lateinit var navigationBarComponent: NavigationBarComponent
-    protected lateinit var showCaseSectionsListComponent: ShowCaseSectionsListComponent
 
     @AndroidFindBy(
         xpath = "//com.urbanairship.android.layout.widget.WeightlessLinearLayout//android.widget.ImageButton"

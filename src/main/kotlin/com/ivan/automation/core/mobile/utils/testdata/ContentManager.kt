@@ -1,5 +1,9 @@
 package com.ivan.automation.core.mobile.utils.testdata
 
+import com.ivan.automation.core.mobile.api.models.enums.LiveEventState
+import com.ivan.automation.core.mobile.api.models.request.CreateContentRequestV2
+import com.ivan.automation.core.mobile.api.models.request.UpdateContentLanguagesRequest
+import com.ivan.automation.core.mobile.api.models.request.UpdateContentRequestV2
 import com.ivan.automation.core.mobile.api.models.response.ContentResponseV2
 import com.ivan.automation.core.mobile.api.models.response.DataResponse
 import com.ivan.automation.core.mobile.api.services.CmsService
@@ -25,11 +29,12 @@ class ContentManager {
      * @param contentType The type of content to create.
      * @return [DataResponse] containing the created content ID and location.
      */
-    fun createContent(contentType: String): DataResponse {
+    fun createContent(contentType: String, territoryId: String = ""): DataResponse {
         val random = RandomStringGenerator.generate()
         val createContentRequest = CreateContentRequestV2(
             type = contentType,
             internalTitle = "$TEST_PREFIX content internal title-$random",
+            territoryId = territoryId
         )
         return CmsService.createContentV2(createContentRequest)
     }
@@ -74,12 +79,12 @@ class ContentManager {
                 territoryId = territoryId,
                 startDate = startDate,
                 endDate = endDate,
-                duration = DEFAULT_DURATION_MS
+                duration = DEFAULT_DURATION_MS.toLong()
             )
         } else {
             UpdateContentRequestV2(
                 territoryId = territoryId,
-                duration = DEFAULT_DURATION_MS
+                duration = DEFAULT_DURATION_MS.toLong()
             )
         }
 
